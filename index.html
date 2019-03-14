@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Etch-a-Sketch</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    </head>
+<body>
+    <div class='toolbar'>
+        <div class='resetBtn'>Reset</div>
+        <div class='sizeBtn'>Size</div>
+    </div>
+    <div class="grid">
+        <div class="row">
+            <div id="1" class="box" class="test"></div>
+            <div id="2" class="box"></div>
+            <div id="3" class="box"></div>
+            <div id="4" class="box"></div>
+        </div>
+        <div class="row">
+            <div id="5" class="box"></div>
+            <div id="6" class="box"></div>
+            <div id="7" class="box"></div>
+            <div id="8" class="box"></div>
+        </div>
+        <div class="row">
+            <div id="9" class="box"></div>
+            <div id="10" class="box"></div>
+            <div id="11" class="box"></div>
+            <div id="12" class="box"></div>
+        </div>
+        <div class="row">
+            <div id="13" class="box"></div>
+            <div id="14" class="box"></div>
+            <div id="15" class="box"></div>
+            <div id="16" class="box"></div>
+        </div>
+    </div>
+
+    <script>
+        function colorBox (arg) {
+            if ( arg.path[0].className !== "box") {
+                return;
+            }    
+            const box = document.querySelector(`div[id="${arg.path[0].id}"]`);
+            box.classList.add('change');
+        }
+
+        window.addEventListener('mouseover', colorBox);
+    </script>
+</body>    
+</html>

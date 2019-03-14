@@ -1,0 +1,90 @@
+html {
+  font-size: 10px;
+}
+
+body,html {
+  font-family: sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: box;
+}
+
+.grid {
+  margin: 0 auto;
+  width: 60vw;
+  height: 60vw;
+  background: rgb(202, 12, 12);
+  padding-top: 15vw;
+  padding-bottom: 15vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  }
+
+.row {
+  display: flex;
+}
+
+.box {
+  background: lightgrey;
+  flex: 1 0 auto;
+  margin: 1px;
+}
+
+.box:after {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.change{
+  background: grey;
+}
+
+.toolbar {
+  top: 0;
+  width: 100%;
+  line-height: 30px;
+}
+
+.toolbar div {
+  display: inline-block;
+}
+
+.resetBtn{
+  background: grey;
+  float: left;
+}
+
+.sizeBtn{
+  background: grey;
+  float: right;
+}
+/*
+.grid {
+  margin: 0 auto;
+  width: 80vw;
+  max-width: 60vh;
+  height: 80vw;
+  max-height: 60vh;
+  font-size: 1rem;
+}
+.row {
+  display: flex;
+}
+.box {
+  background: tomato;
+  margin: 5px;
+  color: white;
+  font-weight: bold;
+  flex: 1 0 auto;
+  position: relative;
+}
+.box:after {
+  content: "";
+  float:left;
+  display: block;
+  padding-top: 100%;
+}
+*/
+
